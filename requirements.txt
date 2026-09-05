@@ -6,3 +6,4 @@ langchain_community
 tavily-python 
 langchain-tavily
 langchain-nvidia-ai-endpoints
+langgraph
