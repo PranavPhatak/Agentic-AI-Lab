@@ -3,3 +3,5 @@ langchain_groq
 streamlit
 dotenv
 langchain_community
+tavily-python 
+langchain-tavily
