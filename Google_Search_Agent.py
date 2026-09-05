@@ -53,15 +53,20 @@ if query:
     st.session_state.chat_history.append({"role":"user", "content":query})
     st.chat_message("user").markdown(query)
 
+    response = agent.stream({
+        "messages": [{
+            "role":"user",
+            "content":query
+        }]},
+        {"configurable": {"thread_id": "search_agent_thread"}},stream_mode="messages"
+    )
     with st.chat_message("ai"):
-        response = agent.invoke({
-            "messages": [{
-                "role":"user",
-                "content":query
-            }]},
-            {"configurable": {"thread_id": "search_agent_thread"}}
-        )
-        answer = response["messages"][-1].content
-        st.markdown(answer)
+        placeholder = st.empty()
+        message = ""
 
-    st.session_state.chat_history.append({"role":"ai", "content": answer})
+        for chunk, metadata in response:
+            if chunk.type == "AIMessageChunk":
+                message += chunk.content
+                placeholder.write(message)
+
+    st.session_state.chat_history.append({"role":"ai", "content": message})
