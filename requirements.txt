@@ -8,3 +8,4 @@ langchain_groq
 langchain_nvidia_ai_endpoints
 pypdf
 beautifulsoup4
+wikipedia

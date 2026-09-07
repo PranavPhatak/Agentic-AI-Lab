@@ -15,4 +15,5 @@ dependencies = [
     "langgraph>=1.2.11",
     "pypdf>=6.18.0",
     "streamlit>=1.63.0",
+    "wikipedia>=1.4.0",
 ]
