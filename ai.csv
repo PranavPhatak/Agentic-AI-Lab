@@ -1,0 +1,16 @@
+id,topic,description,category
+1,Artificial Intelligence,AI systems perform tasks that normally require human intelligence.,AI
+2,Machine Learning,ML systems learn patterns from data instead of being explicitly programmed for every rule.,ML
+3,Supervised Learning,A machine learning approach that uses labeled data.,ML
+4,Unsupervised Learning,A machine learning approach that discovers patterns in unlabeled data.,ML
+5,Reinforcement Learning,An agent learns by interacting with an environment and receiving rewards or penalties.,ML
+6,Natural Language Processing,NLP enables computers to understand and process human language.,NLP
+7,Large Language Model,An LLM is a neural network trained on large amounts of text to understand and generate language.,LLM
+8,LangChain,A framework for developing applications powered by language models.,LangChain
+9,Document Loader,A component used to load external data into LangChain applications.,LangChain
+10,PyPDFLoader,A LangChain document loader used to load and extract text from PDF files.,LangChain
+11,TextLoader,A LangChain document loader used to load text files.,LangChain
+12,RAG,Retrieval-Augmented Generation combines information retrieval with language generation.,RAG
+13,Embeddings,Numerical representations of text that capture semantic meaning.,RAG
+14,Vector Database,A database designed to store and search vector representations efficiently.,RAG
+15,Retriever,A component that finds relevant documents or chunks for a user's query.,RAG
